@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
+import { Dimmer, Loader } from 'semantic-ui-react';
 import Weather from './components/weather';
 import useApi from './hooks/use-api';
 
@@ -23,10 +24,15 @@ export default function App() {
 
   return (
     <div className="App">
-      {
-        // Only render if data exists
-        typeof data.main !== 'undefined' ? <Weather weatherData={data} /> : <div />
-      }
+      {typeof data.main !== 'undefined' ? (
+        <Weather weatherData={data} />
+      ) : (
+        <div>
+          <Dimmer active>
+            <Loader>Loading..</Loader>
+          </Dimmer>
+        </div>
+      )}
     </div>
   );
 }
