@@ -28,38 +28,41 @@
   border-radius: 20px 20px 0 0;
   font-family: 'Recursive', sans-serif;
 }
+.dateContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
 
-.date {
-  padding: 15px;
+.dateHeading {
+  padding: 5px;
   color: whitesmoke;
   font-family: 'Recursive', sans-serif;
   font-size: 24px;
   font-weight: 600;
 }
 
-.temp {
-  padding: 15px;
+.dateItem {
+  padding: 5px;
   color: whitesmoke;
   font-family: 'Recursive', sans-serif;
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: 400;
 }
 
-.flex {
-  display: flex;
+.temp {
   justify-content: space-between;
+  padding: 5px;
+  color: whitesmoke;
+  font-family: 'Recursive', sans-serif;
+  font-size: 24px;
 }
 
 .sunrise-sunset {
+  display: flex;
+  justify-content: space-between;
   padding: 15px;
   color: whitesmoke;
   font-family: 'Recursive', sans-serif;
   font-size: 16px;
-}
-
-.description {
-  padding: 15px;
-  color: whitesmoke;
-  font-family: 'Recursive', sans-serif;
-  font-size: 24px;
-  font-weight: 600;
 }
